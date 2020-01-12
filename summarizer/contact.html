@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<meta charset = "utf-8"/>
+		<link href = "/static/styles.css" rel = "stylesheet" type = "text/css"/>
+		<link href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel = "stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "icon" href = "/static/images/icon.png" type = "image/x-icon"> 
+				
+		<script>
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+				if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+					document.getElementById("webanchor").style.fontSize = "15px";
+					document.getElementById("topbar").style.height = "30px";
+					document.getElementById("1").style.padding = "0px";
+					document.getElementById("2").style.padding = "0px 40px";
+				} else {
+					document.getElementById("webanchor").style.fontSize = "25px";
+					document.getElementById("topbar").style.height = "50px";
+					document.getElementById("1").style.padding = "7px";
+					document.getElementById("2").style.padding = "7px 40px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header id = "contactheader">
+			<div id = "topbar" style = "height: 50px;">
+				<a id = "webanchor" href = "home.html" style = "font-size: 25px;">TEXT SUMMARIZER</a>
+				<p id = "1" style = "transition: 0.2s; padding: 7px; float: left;">Get your massive blocks of study material summarized within a second.</p>
+				<p id = "2" style = "transition: 0.2s; padding: 7px 40px; text-align: right;">LONG STORY MADE SHORT.</p>
+			</div>
+		</header>
+		<div id = "navdiv">
+			<nav>
+				<ul>
+					<li><a href = "/home">Home</a></li>
+					<li><a href = "/" style = "color: orange;">Summarizer</a></li>
+					<li><a href = "/faq">FAQ</a></li>
+					<li><a href = "/contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<h1 style = "margin-left: 200px; margin-top: 40px;">Contact Us</h1>
+		
+		<div id = "contact" class="card">
+			<img src="/static/images/rohini.jpg" alt="John" style="width:100%; border-style: none; width: 300px; height: 200px;">
+			<h2 style = "margin: 20px auto">S V Rohinidevi</h2>
+			<p class="title" style = "margin-top: 20px">Student</p>
+			<p style = "margin-top: 20px">SSN College of Engineering</p>
+			<div style="margin: 25px 100px;">
+				<a class = "link" href="#"><i class="fa fa-dribbble"></i></a> 
+				<a href="#"><i class="fa fa-twitter"></i></a>  
+				<a href="#"><i class="fa fa-linkedin"></i></a>  
+				<a href="#"><i class="fa fa-facebook"></i></a> 
+			</div>
+			<p><button>Profile Card</button></p>
+		</div>
+		
+		<div id = "contact" class="card" style = "margin-left: 80px;">
+			<img src="/static/images/sanjana.jpg" alt="John" style="width:100%; border-style: none; width: 300px; height: 200px;">
+			<h2 style = "margin: 20px auto">Sanjana K</h2>
+			<p class="title" style = "margin-top: 20px">Student</p>
+			<p style = "margin-top: 20px">SSN College of Engineering</p>
+			<div style="margin: 25px 100px;">
+				<a href="#"><i class="fa fa-dribbble"></i></a> 
+				<a href="#"><i class="fa fa-twitter"></i></a>  
+				<a href="#"><i class="fa fa-linkedin"></i></a>  
+				<a href="#"><i class="fa fa-facebook"></i></a> 
+			</div>
+			<p><button>Profile Card</button></p>
+		</div>
+		
+		<div id = "contact" class="card" style = "margin-left: 80px;">
+			<img src="/static/images/shreya.png" alt="John" style="width:100%; border-style: none; width: 300px; height: 200px;">
+			<h2 style = "margin: 20px auto">Shreya S</h2>
+			<p class="title" style = "margin-top: 20px">Student</p>
+			<p style = "margin-top: 20px">SSN College of Engineering</p>
+			<div id = "links" style="margin: 25px 100px;">
+				<a href="#"><i class="fa fa-dribbble"></i></a> 
+				<a href="#"><i class="fa fa-twitter"></i></a>  
+				<a href="#"><i class="fa fa-linkedin"></i></a>  
+				<a href="#"><i class="fa fa-facebook"></i></a> 
+			</div>
+			<p><button>Profile Card</button></p>
+		</div>
+
+		<div style = "float: right; margin: 50px 150px;">
+			
+		</div>
+	</body>
+</html>

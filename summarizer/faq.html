@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<title>FAQ</title>
+		<meta charset = "utf-8"/>
+		<link href = "/static/styles.css" rel = "stylesheet" type = "text/css"/>
+		<link href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel = "stylesheet">
+		<link rel = "icon" href = "/static/images/icon.png" type = "image/x-icon"> 
+		
+		<script>
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+				if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+					document.getElementById("webanchor").style.fontSize = "15px";
+					document.getElementById("topbar").style.height = "30px";
+					document.getElementById("1").style.padding = "0px";
+					document.getElementById("2").style.padding = "0px 40px";
+				} else {
+					document.getElementById("webanchor").style.fontSize = "25px";
+					document.getElementById("topbar").style.height = "50px";
+					document.getElementById("1").style.padding = "7px";
+					document.getElementById("2").style.padding = "7px 40px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header id = "faqheader">
+			<div id = "topbar" style = "height: 50px;">
+				<a id = "webanchor" href = "home.html" style = "font-size: 25px;">TEXT SUMMARIZER</a>
+				<p id = "1" style = "transition: 0.2s; padding: 7px; float: left;">Get your massive blocks of study material summarized within a second.</p>
+				<p id = "2" style = "transition: 0.2s; padding: 7px 40px; text-align: right;">LONG STORY MADE SHORT.</p>
+			</div>
+		</header>
+		<div id = "navdiv">
+			<nav>
+				<ul>
+					<li><a href = "/home">Home</a></li>
+					<li><a href = "/" style = "color: orange;">Summarizer</a></li>
+					<li><a href = "/faq">FAQ</a></li>
+					<li><a href = "/contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>	
+		<h1 style = "margin-left: 200px; margin-top: 40px;">Submit Query</h1>
+		<div id = "formdiv">
+			<form action = "/action_page.php">
+				<label for = "fname">First Name</label>
+				<input type = "text" id = "fname" name = "firstname" placeholder = "Your first name" required>
+
+				<label for = "lname">Last Name</label>
+				<input type = "text" id = "lname" name = "lastname" placeholder = "Your last name">
+				
+				<label for = "email">Email Address</label>
+				<input type = "email" id = "email" placeholder = "Your email address" required>
+				
+				<label for = "query">Query</label>
+				<textarea id = "query" placeholder = "Write your query" required></textarea> 
+			  
+				<input type = "submit" value = "Submit">
+			</form>
+		</div>
+		<aside>
+			<img src = "/static/images/faq-pic.jpg" width = "227px" height = "227px" alt = "main ideas picture"/>
+		</aside>
+	</body>
+</html>

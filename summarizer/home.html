@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset = "utf-8"/>
+		<link href = "/static/styles.css" rel = "stylesheet" type = "text/css"/>
+		<link href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel = "stylesheet">
+		<link rel = "icon" href = "/static/images/icon.png" type = "image/x-icon"> 
+		
+		<script>
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+				if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+					document.getElementById("webanchor").style.fontSize = "15px";
+					document.getElementById("topbar").style.height = "30px";
+					document.getElementById("1").style.padding = "0px";
+					document.getElementById("2").style.padding = "0px 40px";
+				} else {
+					document.getElementById("webanchor").style.fontSize = "25px";
+					document.getElementById("topbar").style.height = "50px";
+					document.getElementById("1").style.padding = "7px";
+					document.getElementById("2").style.padding = "7px 40px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header id = "homeheader">
+			<div id = "topbar" style = "height: 50px;">
+				<a id = "webanchor" href = "home.html" style = "font-size: 25px; float: left;">TEXT SUMMARIZER</a>
+				<p id = "1" style = "transition: 0.2s; padding: 7px; float: left;">Get your massive blocks of study material summarized within a second.</p>
+				<p id = "2" style = "transition: 0.2s; padding: 7px 40px; text-align: right;">LONG STORY MADE SHORT.</p>
+			</div>
+		</header>
+		<div id = "navdiv">
+			<nav>
+				<ul>
+					<li><a href = "/home">Home</a></li>
+					<li><a href = "/summarizer" style = "color: orange;">Summarizer</a></li>
+					<li><a href = "/faq">FAQ</a></li>
+					<li><a href = "/contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<section>
+			<div>
+				<h1>What is Text Sumarization ?</h1>
+				<p>Text Sumarization refers to the technique of shortening long pieces of text. The intention is to create a coherent and fluent summary having only the main points outlined in the document.</p>
+				<h1>What does our Text Summarizer do ?</h1>
+				<p>Our Text Summarizer takes the massive block of text uploaded and provides the main headings present.</p>
+			</div>
+		</section>
+		<aside>
+			<img src = "/static/images/main-ideas.jpg" width = "227px" height = "222px" alt = "main ideas picture"/>
+		</aside>
+	</body>
+</html>
